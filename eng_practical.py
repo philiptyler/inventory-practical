@@ -1,21 +1,6 @@
 import sys
 from inventory import Inventory
 
-inventory = {
-    'small': {
-        'slim': 5,
-        'reg': 5
-    },
-    'medium': {
-        'slim': 5,
-        'reg': 5
-    },
-    'large': {
-        'slim': 5,
-        'reg': 5
-    },
-}
-
 def format_input(request):
     # this will throw a ValueError if there are not enough values
     date, small, medium, large = request.split(',')

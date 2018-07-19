@@ -1,8 +1,5 @@
 import copy
 
-SMALL = 'small'
-MEDIUM = 'medium'
-LARGE = 'large'
 SLIM = 'slim'
 REG = 'regular'
 
@@ -44,6 +41,7 @@ class Inventory():
         for e in events:
             new_event = Event(*e)
             event_array.append(new_event)
+            # create a return event that will refill inventory
             event_array.append(new_event.get_return_event())
         event_array.sort(key=lambda x: x.date)
         return event_array
