@@ -1,5 +1,5 @@
 import sys
-from inventory import Inventory
+from models import Inventory
 
 def format_input(request):
     # this will throw a ValueError if there are not enough values
